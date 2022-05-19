@@ -1,0 +1,13 @@
+{
+    "table_example": {
+        "column": {
+            "id": true,
+            "name": true,
+            "description": true,
+            "is_enabled": true,
+            "weighing_factor": true,
+            "created_at": true,
+            "updated_at": true
+        }
+    }
+}

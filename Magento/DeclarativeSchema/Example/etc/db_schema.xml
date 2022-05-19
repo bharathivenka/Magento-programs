@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+ 
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="table_example" resource="default" comment="My table" charset="utf8">
+        <column name="id" xsi:type="int" padding="5" unsigned="true" nullable="false" identity="true"></column>
+        <column name="name" xsi:type="varchar" nullable="false" length="124"></column>
+        <column name="description" xsi:type="text" nullable="true"></column>
+        <column name="is_enabled" xsi:type="boolean" nullable="false" default="0"></column>
+        <column name="weighing_factor" xsi:type="decimal" precision="5" scale="4"></column>
+        <column name="created_at" xsi:type="timestamp" default="CURRENT_TIMESTAMP"></column>
+        <column name="updated_at" xsi:type="timestamp" default="CURRENT_TIMESTAMP" on_update="true"></column>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+        <column name="id"/>
+        </constraint>
+    </table>
+</schema>

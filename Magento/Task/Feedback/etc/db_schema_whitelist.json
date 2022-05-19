@@ -1,0 +1,15 @@
+{
+    "ziffity_customer_feedback": {
+        "column": {
+            "feedback_id": true,
+            "firstname": true,
+            "lastname": true,
+            "email": true,
+            "comment": true,
+            "status": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
